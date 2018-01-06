@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
 router.get('/', (req, res, next) => {
   // code goes here
   knex('table_name')
@@ -34,5 +33,6 @@ router.delete('/:id', (req, res, next) => {
   const id = req.params.id
   // code goes here
 })
+
 
 module.exports = router;
